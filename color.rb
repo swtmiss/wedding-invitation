@@ -1,0 +1,1 @@
+system "open http://www.color-hex.com/color/#{ARGV[0]}"
