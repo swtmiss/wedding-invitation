@@ -1,22 +1,13 @@
 body {
-  background: #fff;
+  background: #FFF;
   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', 'Helvetica Neue', 'Nanum Barun Gothic', 'Nanum Gothic', Helvetica, Arial, sans-serif;
   color: #666;
   font-size: 13px;
   line-height: 25px;
   padding-bottom: 50px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  -webkit-animation-delay: 10s;
-  -moz-animation-delay: 10s;
-  -o-animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  animation-delay: 10s;
-}
-header p {
-  font-size: 14pt;
-  line-height: 25px;
+h1, h2, h3, h4, h5, h6, small {
+  font-weight: 100;
 }
 h1 {
   font-size: 40px;
@@ -24,32 +15,28 @@ h1 {
   padding-bottom: 10px;
 }
 h2{
-font-size: 35px;
-line-height:45px;
-padding-top: 10px;
-padding-bottom: 10px;
+  font-size: 35px;
+  line-height:45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 h3{
-font-size:22px;
-line-height:28px;
+  font-size:22px;
+  line-height:28px;
 }
 h4 {
-font-size:18px;
-line-height:24px;
-}
-h5 {
-  font-size: 14px;
-  line-height: 20px;
+  font-size:18px;
+  line-height:24px;
 }
 p {
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
-a, a:visited{
-  color: #d5d1b9;
+a, a:visited {
+  color: #a9adcb;
 }
 
 a:hover {
-  color: #d5d1b9;
+  color: #a9adcb;
 }
 .button {
   margin:10px 0px;
@@ -65,7 +52,7 @@ a:hover {
   border: #d5d1b9;
 }
 .button a:hover {
-  background: #d5d1b9;
+  background: #cbc7a9;
   text-decoration: none;
 }
 .border {
@@ -89,20 +76,57 @@ a:hover, a:active, a:focus {
 
 header {
   top: 0;
-  height: 600px;
+  height: 700px;
   text-align: center;
-  color: #fff;
-  background: #fff url('../img/bg.png') no-repeat;
+  background: #e2a5ab;
+  border-bottom: 1px solid #eecccf;
+}
+.bg {
+  height: 700px;
+  background: #e2a5ab url('../img/bg.png') no-repeat;
   background-size: cover;
   background-position: top;
-  border-bottom: 1px solid;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 header h1 {
   font-size: 72px;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
   color: #FFF;
-  text-shadow: 0 0 5px #000;
-  margin-top: 250px;
+  text-shadow: 0 0 10px #cf6b75;
+  margin-top: 310px;
 }
 
 /* Head */
@@ -115,22 +139,70 @@ header h1 {
   word-spacing: 5px;
 }
 .head > h2 > small {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 /* About */
 
+#aboutus {
+  text-align: center;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.intro {
+  display: inline-block;
+  width: 100%;
+  font-weight: 300;
+}
+.intro > p, .about > p {
+  line-height: 30px;
+  font-size: 18px;
+}
 .about {
   padding: 10px;
-  background: #f5f4ef;
+  background: #fbfbf9;
   border: 0 solid ;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-top: 90px;
+  margin-bottom: 100px;
 }
 .about img {
-  float: left;
-  margin: 18px 10px 18px 18px;
+  margin: 45px 10px 0px 18px;
   border: 1px solid #E8E6D9;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
 }
 .about div {
   margin: 45px;
@@ -138,17 +210,6 @@ header h1 {
 .about .baptismal {
   color: #888;
   font-size: 18px;
-}
-.intro {
-  display: inline-block;
-  width: 100%;
-  font-size: 20px;
-  line-height: 30px;
-  border-radius: 10px;
-  padding: 20px;
-  border: 0;
-  box-shadow: none;
-  text-align: center;
 }
 
 /* Carousel */
@@ -162,7 +223,7 @@ header h1 {
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 500px; /* width: 960; */
   background-color: #FFF;
 }
 .carousel-inner > .item > img {
@@ -312,8 +373,6 @@ header h1 {
     opacity: .9;
 }
 
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next,
 .carousel-control .icon-prev {
     position: absolute;
@@ -323,13 +382,11 @@ header h1 {
     margin-top: -10px;
 }
 
-.carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
     left: 50%;
     margin-left: -10px;
 }
 
-.carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next {
     right: 50%;
     margin-right: -10px;
@@ -376,28 +433,11 @@ header h1 {
     border-radius: 10px;
 }
 
-.carousel-indicators .active {
+.carousel-indicators li.active {
     width: 10px;
     height: 10px;
     margin: 0;
     background-color: #fff;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-.carousel-caption .btn {
-    text-shadow: none;
 }
 
 @media screen and (min-width:768px) {
@@ -431,26 +471,25 @@ header h1 {
 /* Wedding */
 
 .wedding {
-  padding: 10px 20px;
-  background: #fafafa;
+  padding: 10px 19px 30px 20px;
+  background: #fbfbf9;
   border-radius: 10px;
   margin-bottom: 10px;
-  border: 1px solid #eee;
+  border: none;
+  text-align: center;
 }
-.wedding h4 i {
+.wedding h4 {
+  line-height: 40px;
+  letter-spacing: 2px;
   margin-top: 4px;
   margin-right: 2px;
 }
-.wedding a img {
-  border: 1px solid #eee;
+.wedding hr, .wedding a img {
+  border: 1px solid #f6f5f1;
 }
 
 
 /* Form */
-
-form button {
-  margin-left: 15px;
-}
 
 /* Footer */
 
