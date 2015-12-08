@@ -85,35 +85,44 @@
           </div>
         </div>
         <div class="span12">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <!-- Carousel
+          ================================================== -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-
-            <!-- Wrapper for slides -->
+            <!-- Indicators end -->
             <div class="carousel-inner" role="listbox">
-              <div class="item active"><!-- image size is 960*500 -->
-                <img src="img/photos/slide1.png" alt="">
+              <div class="item active">
+                <img class="first-slide" src="img/photos/slide1.png" alt="First slide">
+                <div class="container">
+                </div>
               </div>
               <div class="item">
-                <img src="img/photos/slide2.png" alt="">
+                <img class="second-slide" src="img/photos/slide2.png" alt="Second slide">
+                <div class="container">
+                </div>
               </div>
               <div class="item">
-                <img src="img/photos/slide3.png" alt="">
+                <img class="third-slide" src="img/photos/slide3.png" alt="Third slide">
+                <div class="container">
+                </div>
               </div>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
               <span class="icon-prev" aria-hidden="true"></span>
+              <span class="sr-only"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
               <span class="icon-next" aria-hidden="true"></span>
+              <span class="sr-only"></span>
             </a>
-          </div>
+          </div><!-- /.carousel -->
+
         </div>
       </div>
     </div>
@@ -170,6 +179,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/transition.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/jquery.anchor.js"></script>
   </body>

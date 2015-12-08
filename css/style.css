@@ -212,7 +212,7 @@ header h1 {
   font-size: 18px;
 }
 
-/* Carousel */
+/* GALLERY */
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -299,7 +299,7 @@ header h1 {
 }
 
 .carousel-inner>.active {
-    left: 0;
+  left: 0;
 }
 
 .carousel-inner>.next,
@@ -339,16 +339,16 @@ header h1 {
     font-size: 20px;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: none;
     filter: alpha(opacity=50);
     opacity: .5;
 }
 
 .carousel-control.left {
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .5) 0, rgba(255, 255, 255, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, .5) 0, rgba(255, 255, 255, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, .0001)));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .5) 0, rgba(255, 255, 255, .0001) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
     background-repeat: repeat-x;
 }
@@ -356,10 +356,10 @@ header h1 {
 .carousel-control.right {
     right: 0;
     left: auto;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .0001) 0, rgba(255, 255, 255, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, .0001) 0, rgba(255, 255, 255, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .0001)), to(rgba(255, 255, 255, .5)));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .0001) 0, rgba(255, 255, 255, .5) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x;
 }
@@ -434,10 +434,12 @@ header h1 {
 }
 
 .carousel-indicators li.active {
+    display: inline-block;
     width: 10px;
     height: 10px;
-    margin: 0;
+    margin: 1px;
     background-color: #fff;
+    border: 1px solid #fff;
 }
 
 @media screen and (min-width:768px) {
@@ -468,7 +470,7 @@ header h1 {
     }
 }
 
-/* Wedding */
+/* ACCESS */
 
 .wedding {
   padding: 10px 19px 30px 20px;
@@ -486,6 +488,7 @@ header h1 {
 }
 .wedding hr, .wedding a img {
   border: 1px solid #f6f5f1;
+  border-radius: 10px;
 }
 
 
